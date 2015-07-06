@@ -36,7 +36,7 @@
 
 #include <cstdio>
 
-#include "photo/photo_reporter.hpp"
+#include <photo/photo_reporter.hpp>
 
 //photo_reporter::photo_reporter( void )
 //{

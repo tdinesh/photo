@@ -39,9 +39,11 @@
 #include <cstdlib>
 #include <cstring>
 
-#include "photo/photo_reporter.hpp"
+#include <unistd.h>
 
-#include "photo/photo_camera.hpp"
+
+#include <photo/photo_reporter.hpp>
+#include <photo/photo_camera.hpp>
 
 
 photo_camera::photo_camera( void ) :
@@ -65,8 +67,8 @@ GPContext* photo_camera::photo_camera_create_context( void )
   context_ = gp_context_new();
 
   // Optional debugging and status output
-  gp_context_set_error_func( context_, photo_reporter::contextError, NULL );
-  gp_context_set_status_func( context_, photo_reporter::contextStatus, NULL );
+  //gp_context_set_error_func( context_, photo_reporter::contextError, NULL );
+  //gp_context_set_status_func( context_, photo_reporter::contextStatus, NULL );
   return context_;
 }
 
